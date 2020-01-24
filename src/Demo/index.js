@@ -1,4 +1,5 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation'
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack';
 import { Easing, Animated } from 'react-native'
 import DemoSlider from './pages/DemoSlider'
 import DemoFirstPage from './pages/DemoFirstPage'

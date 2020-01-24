@@ -31,14 +31,14 @@ const SafeContainer = props => {
     )
   }
 
-  const getStyle = ({windowHeight}) => StyleSheet.create({
-      container: {
-          flex:1,
-          justifyContent: 'space-evenly',
-          alignItems: 'center',
-          backgroundColor: 'white',
-          minHeight: windowHeight < 590 ? 590 : windowHeight,
-      }
-  })
+const getStyle = ({windowHeight}) => StyleSheet.create({
+    container: {
+        flex:1,
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        minHeight: windowHeight < 590 ? 590 : windowHeight,
+    }
+})
 
   export default SafeContainer

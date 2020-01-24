@@ -2,6 +2,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import PropTypes from 'prop-types'
 
 const Button = ({ title, onPress, color, style }) => {
   const { shadow, touchable, text } = getStyle({ color })
@@ -38,4 +39,16 @@ const getStyle = ({ color } = {}) =>
     },
   })
 
+  Button.propTypes = {
+    title: PropTypes.string.isRequired,
+    onPress: PropTypes.func.isRequired,
+    color: PropTypes.string,
+    style: PropTypes.shape({}),
+  }
+  
+  Button.defaultProps = {
+    color: null,
+    style: {},
+  }
+  
 export default Button
